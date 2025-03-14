@@ -26,6 +26,8 @@ struct FruitDetailView: View {
                             .font(.headline)
                             .multilineTextAlignment(.leading)
                         
+                        FruitNutrientsView(fruit: fruit)
+                        
                         Text("Learn mor about \(fruit.title)".uppercased())
                             .fontWeight(.bold)
                             .foregroundColor(fruit.gradientColors[1])
@@ -35,7 +37,7 @@ struct FruitDetailView: View {
                         
                         SourceLinkView()
                             .padding(.top, 10)
-                            .padding(.bottom, 40)
+                            .padding(.bottom, 20)
                             
                     }
                     .padding(.horizontal, 20)
